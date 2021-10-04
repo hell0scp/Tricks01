@@ -1,0 +1,15 @@
+Different tricks to turn your LFI into RCE
+
+1-Using file upload forms/functions
+2-Using the PHP wrapper expect://command
+3-Using the PHP wrapper php://file
+4-Using the PHP wrapper php://filter
+5-Using PHP input:// stream
+6-Using data://text/plain;base64,command
+7-Using /proc/self/fd
+8-Using log files with controllable input like:
+= /var/log/apache/access.log
+= /var/log/apache/error.log
+= /var/log/vsftpd.log
+= /var/log/sshd.log
+= /var/log/mail
